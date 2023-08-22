@@ -13,7 +13,7 @@
 GenPass::charset alpha = "abcdefghijklmnopqrstuvwxyz";
 GenPass::charset uppercaseAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 GenPass::charset numbers = "1234567890";
-GenPass::charset symbols = ":;*&^%$#@!";
+GenPass::charset symbols = "~`!@#$%^&*()_-+={[}]|\\:;\"'<,>.?/";
 
 void threadWorker(const std::vector<std::string>& passes, std::ofstream& outputFile, std::atomic<uint64_t>& total, GenPass::charset charset) {
     uint64_t localTotal = 0;
